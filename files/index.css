@@ -535,7 +535,8 @@ html {
 }
 
 .tile.fade {
-  background: linear-gradient(110deg, #4a12a59f 0, #11171d00 100%);
+  background: linear-gradient(110deg, #4a12a59f 0, #FF00EC20 110%);
+  border: solid 2px #4a12a59f ;
 }
 
 .faq {
@@ -1426,7 +1427,6 @@ html {
 .view-homepage .section-how-it-works .versions-button a span,
 .view-homepage .section-how-it-works .versions-button a span * {
   cursor: pointer;
-  background: transparent;
   transition: 0.4s ease all;
 }
 
@@ -1641,6 +1641,13 @@ html {
   margin-top: 40px;
 }
 
+.faq a {
+color:hotpink; text-decoration: underline; transition: all ease 0.3s;
+}
+
+.faq a:hover {
+color:magenta;
+}
 .view-homepage .section-faq .faq-items .item {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 50%;
@@ -2122,10 +2129,8 @@ body {
   filter: drop-shadow(1px 1px 8px black);
   text-align: center;
   padding: 15px;
-  background: linear-gradient(to left, #723bcb, #ff69b4);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: white;
+  text-shadow: 0px 0px 10px #4a12a59f;
 }
 
 .app-layout .app-header .menu li a:hover {
