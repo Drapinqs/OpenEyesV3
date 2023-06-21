@@ -4,7 +4,7 @@
     <title>OpenEyes - Your home for technology.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#1a2837">
-    <link rel="stylesheet" href="./files/learn.css">
+    <link rel="stylesheet" href="./files/css/learn.css">
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   </head>
   <body class="homepage">
@@ -55,7 +55,7 @@
               <section class="section-top">
                 <div class="top-upper">
                   <div class="video-wrapper">
-                    <video poster="files/background.png" preload="auto" autoplay="" playsinline="" loop=""></video>
+                    <video poster="files/images/background.png" preload="auto" autoplay="" playsinline="" loop=""></video>
                   </div>
                   <div class="homepage-section-wrapper">
                     <div class="top-content">
@@ -64,11 +64,11 @@
                         <script type="text/javascript">
                           (function () {var angle = 0;var h1 = document.querySelector('h1');var text = h1.textContent.split('');var len = text.length;var phaseJump = 360 / len;var spans;h1.innerHTML = text.map(function (char) {return '<span>' + char + '</span>';}).join('');spans = h1.children;(function rainbowwheel () {for (var i = 0; i < len; i++) {spans[i].style.color = 'hsl(' + (angle + Math.floor(i * phaseJump)) + ', 55%, 70%)';}angle++;requestAnimationFrame(rainbowwheel);})();})();
                         </script>
-                        <p class="message">On this page, you can enroll in one of our OpenEyes Learning Courses (OELC). These courses cover topics such as computer problem solving and basic computing. Upon completion of any of our courses, you will receive an industry-recognized certification!</p>
+                        <p class="message">On this page, you can enroll in one of our OpenEyes Learning Courses (OELC). These courses cover topics such as computer problem solving and basic computing. Upon completion of any of our courses, you will receive an industry-recognized certification for the course you completed!</p>
                       </div>
                       <div class="screenshots">
                         <div class="itc-slider" data-slider="itc-slider">
-                          <img class="oelcimg" src="files/images/learn1.jpg">
+                          <iframe src="files/slideshows/learn/learn-slideshow.html" class="slideshow" frameborder=0 width="671px" height="500px"></iframe>
                         </div>
                       </div>
                     </div>
@@ -89,7 +89,7 @@
                     <p style="font-size:55px; line-height: 1em; color: white;" class="lime">We want to <br>
                       <span class="purple2">Teach</span> you
                     </p>
-                    <p>We provide you with a variety of learning courses for you to select from.</p>
+                    <p>We provide you with a variety of learning courses for you to select from</p>
                     <div class="graphic">
                       <div class="desktop-background"></div>
                     </div>
@@ -103,17 +103,16 @@
                     <div class="col">
                       <div class="tile purple">
                         <span class="extrap2" style="color:gold; font-size: 35px; background-image: url(files/images/gold.gif); white-space: nowrap;">Limited Time Offer</span>
-                        <div style="white-space: nowrap;" class="versions-wrapper">
+                        <div class="versions-wrapper">
                           <br>
                           <p class="extrap2" style="color:white;font-size: 40px;line-height: 1em;">OELC30</p>
-                          <p style="overflow-wrap: break-word;"><br>The OELC30 (OpenEyes Learning Course) covers knowledge and understanding of computers<br></p>
+                          <p><br>The OELC30 (OpenEyes Learning Course) covers knowledge and understanding of computers<br></p>
                           <p>
                             <br>The current revision of this course is 30 (Version 3)
                           </p>
-                          <br>
-                          <p>
-                           <br>
-                            <br>text here later 
+                          <br><br>
+                          <p  style="word-spacing: 0.14em !important; text-align: left;"><br>
+                            The OELC30 is a specialized technology certificate designed to enhance an individuals proficiency, specifically in the realm of the technology industry. The OELC30 is a combination of our other industry leading certificates, such as: The OENC30, The OESC30, and The OEIC30. This course includes topics on networking, cybersecurity, infrastructures, and general knowledge related to computing
                           </p>
                         </div>
                         <div class="versions-button">
@@ -132,7 +131,7 @@
                   <div class="layout">
                     <div class="col">
                       <div class="tile purple">
-                        <div style="white-space: nowrap;" class="versions-wrapper">
+                        <div class="versions-wrapper">
                           <br>
                           <p class="extrap2" style="color:white;font-size: 40px;line-height: 1em;">OENC30</p>
                           <p style="overflow-wrap: break-word;"><br>The OENC30 (OpenEyes Networking Course) covers computer networking<br></p>
@@ -140,9 +139,9 @@
                             <br>The current revision of this course is 30 (Version 3)
                           </p>
                           <br>
-                          <p>
+                          <p  style="word-spacing: 0.14em !important; text-align: left;">
                            <br>
-                            <br>text here later 
+                            <br>The OENC30 is a specialized technology certificate designed to enhance an individuals proficiency, specifically in the realm of the networking industry. The OENC30 is a course that details on the topics of Computer Connectivity, including: IoT, LAN, WAN, MAN, Wireless/Wired Networking, 7-Layer OSI Model, IP Addresses, Switches, Routers/Modems, and more
                           </p>
                         </div>
                         <div class="versions-button">
@@ -161,17 +160,46 @@
                   <div class="layout">
                     <div class="col">
                       <div class="tile purple">
-                        <div style="white-space: nowrap;" class="versions-wrapper">
+                        <div class="versions-wrapper">
                           <br>
                           <p class="extrap2" style="color:white;font-size: 40px;line-height: 1em;">OESC30</p>
-                          <p style="overflow-wrap: break-word;"><br>The OESC30 (OpenEyes Servicing Course) covers topics on servicing customers<br></p>
+                          <p style="overflow-wrap: break-word;"><br>The OESC30 (OpenEyes Security Course) covers topics on modern cybersecurity<br></p>
                           <p>
                             <br>The current revision of this course is 30 (Version 3)
                           </p>
                           <br>
-                          <p>
+                          <p  style="word-spacing: 0.14em !important; text-align: left;">
                            <br>
-                            <br>text here later 
+                            <br>The OESC30 is a specialized technology certificate designed to enhance an individuals proficiency, specifically in the realm of technological security. The OESC30 is a course that details on the topics of On-site Security, Off-site security, Wire Data Transfer, Secure Network Connectivity, (spear)Phishing/Vishing/Whaling, Scamming, and more
+                          </p>
+                        </div>
+                        <div class="versions-button">
+                          <a id="clickbtn" href="learn.html">
+                            <span>Add to cart</span>
+                            <span>$79.99</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="section-how-it-works">
+                <div class="homepage-section-wrapper">
+                  <div class="layout">
+                    <div class="col">
+                      <div class="tile purple">
+                        <div class="versions-wrapper">
+                          <br>
+                          <p class="extrap2" style="color:white;font-size: 40px;line-height: 1em;">OEIC30</p>
+                          <p style="overflow-wrap: break-word;"><br>The OEIC30 (OpenEyes Infrastructure Course) covers IT service technology<br></p>
+                          <p>
+                            <br>The current revision of this course is 30 (Version 3)
+                          </p>
+                          <br>
+                          <p  style="word-spacing: 0.14em !important; text-align: left;">
+                           <br>
+                            <br>The OEIC30 is a specialized technology certificate designed to enhance an individuals proficiency, specifically in the realm of the business infrastructures. The OEIC30 is a course that details on the topics of Asset Management, Active Directories, LAN Optimization, Configuration of Label Printers/Office Printers, MDF/IDF Configuration, Use of Ethernet/Keystone Jacks, and more
                           </p>
                         </div>
                         <div class="versions-button">
