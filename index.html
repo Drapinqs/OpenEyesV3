@@ -36,7 +36,7 @@
             <nav class="menu">
               <ul>
                 <li>
-                  <a href="learn.html" onclick="toggleMobileMenu(false)" class="internal-link">Learn</a>
+                  <a href="learn.html" onclick="toggleMobileMenu(false)"" class=" internal-link">Learn</a>
                 </li>
                 <li>
                   <a href="tools.html">Our Tools</a>
@@ -62,7 +62,14 @@
                       <div class="info">
                         <h1 class="title"> Embrace your Devices </h1>
                         <script type="text/javascript">
-                          (function () {var angle = 0;var h1 = document.querySelector('h1');var text = h1.textContent.split('');var len = text.length;var phaseJump = 360 / len;var spans;h1.innerHTML = text.map(function (char) {return '<span>' + char + '</span>';}).join('');spans = h1.children;(function rainbowwheel () {for (var i = 0; i < len; i++) {spans[i].style.color = 'hsl(' + (angle + Math.floor(i * phaseJump)) + ', 55%, 70%)';}angle++;requestAnimationFrame(rainbowwheel);})();})();
+                          (function() {
+                              var angle = 0;
+                              var h1 = document.querySelector('h1');
+                              var text = h1.textContent.split('');
+                              var len = text.length;
+                              var phaseJump = 360 / len;
+                              var spans;
+                              h1.innerHTML = text.map(function (char) {return '<span>' + char + '</span>';}).join('');spans = h1.children;(function rainbowwheel () {for (var i = 0; i < len; i++) {spans[i].style.color = 'hsl(' + (angle + Math.floor(i * phaseJump)) + ', 55%, 70%)';}angle++;requestAnimationFrame(rainbowwheel);})();})();
                         </script>
                         <p class="message">We're on a mission to make technology easy and exciting for you. Learn all about your devices and even get them fixed when needed. Join our free online course or rely on us to repair your broken devices in emergencies! </p>
                       </div>
@@ -148,14 +155,13 @@
                       </div>
                       <div class="item tile fade faq">
                         <h3>What does OpenEyes teach? </h3>
-                        <p>
-Our online learning courses can provide you with a general knowledge and understanding in the technological realm. You can view all the topics we cover and all of our available courses on our <a href="learn.html">Learning Page</a>.</p>
+                        <p> Our online learning courses can provide you with a general knowledge and understanding in the technological realm. You can view all the topics we cover and all of our available courses on our <a href="learn.html">Learning Page</a>. </p>
                       </div>
                     </div>
                     <div class="row">
                       <div class="item tile fade faq">
                         <h3>Can OpenEyes support my business?</h3>
-                        <p>If you are an enterprise or business-related platform interested in using our services, please contact us through our <a href="contacts.html">Contact Page</a> so that we can connect with you.</p>
+                        <p>If you are an enterprise or business-related platform interested in using our services, please contact us through our <a href="contacts.html">Contact Page</a> so that we can connect with you. </p>
                       </div>
                     </div>
                     <div class="row">
@@ -241,30 +247,18 @@ Our online learning courses can provide you with a general knowledge and underst
           </script>
   </body>
   <script type="text/javascript">
-     $(document).ready(function() {
+    $(document).ready(function() {
+      $('body').css('display', 'none');
+      $('body').fadeIn(1000);
+      $('.link').click(function() {
+        event.preventDefault();
+        newLocation = this.href;
+        $('body').fadeOut(1000, newpage);
+      });
 
-$('body').css('display', 'none');
-
-$('body').fadeIn(1000);
-
-
-
-$('.link').click(function() {
-
-event.preventDefault();
-
-newLocation = this.href;
-
-$('body').fadeOut(1000, newpage);
-
-});
-
-function newpage() {
-
-window.location = newLocation;
-
-}
-
-});
+      function newpage() {
+        window.location = newLocation;
+      }
+    });
   </script>
 </html>
