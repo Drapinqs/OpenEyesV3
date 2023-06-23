@@ -15,7 +15,8 @@
      background: #222222;
 }
  body {
-     overflow-y: overlay;
+
+     overflow: overlay;
 }
  .forminput {
      margin: auto;
@@ -693,6 +694,8 @@
     }
 }
  .view-homepage {
+     border-bottom-left-radius: 50px !important;
+     border-bottom-right-radius: 50px !important;
      position: relative;
      z-index: 0;
      overflow: hidden;
@@ -740,7 +743,6 @@
      color: transparent;
      -webkit-background-clip: text;
      background-clip: text;
-     text-transform: uppercase;
 }
  .view-homepage h1.lime em, .view-homepage h2.lime em {
      color: #acff35;
@@ -771,6 +773,7 @@
      -webkit-box-flex: 1;
      -ms-flex: 1 1 auto;
      flex: 1 1 auto;
+     min-height: 620px;
      position: relative;
      padding-top: 100px;
      display: -webkit-box;
@@ -787,14 +790,12 @@
      width: 100%;
      height: 100%;
      opacity: 0.5;
-     filter: blur(2px);
 }
  .view-homepage .section-top video {
      z-index: -1;
      -o-object-fit: cover;
      object-fit: cover;
-     font-family: "object-fit: cover;
-    ";
+     font-family: "object-fit: cover";
      width: 100%;
      height: 100%;
      pointer-events: none;
@@ -995,15 +996,12 @@
      width: 82px;
      height: 15px;
 }
- @media (max-width: 1250px) {
+ @media (max-width: 1366px) {
      .view-homepage .top-footer .wrapper {
          width: 800px;
     }
      .view-homepage .top-footer .wrapper > * {
          margin-bottom: 15px;
-    }
-     .view-homepage .top-footer .wrapper > :nth-child(4):before {
-         display: none;
     }
 }
  @media (max-width: 900px) {
@@ -1098,7 +1096,7 @@
      justify-content: space-between;
 }
  .view-homepage .section-how-it-works .versions-wrapper {
-     height: 560px;
+     min-height: 480px;
      text-transform: none;
      overflow: hidden;
      position: relative;
@@ -1107,7 +1105,7 @@
 }
  @media (max-width: 900px) {
      .view-homepage .section-how-it-works .versions-wrapper {
-         height: 500px;
+         min-height: 400px;
     }
 }
  .view-homepage .section-how-it-works .versions {
@@ -1125,8 +1123,8 @@
      display: none;
 }
  .view-homepage .section-how-it-works .versions-button {
-     margin-top: 20px;
-     margin-bottom: -23px;
+     position: relative;
+     top: 15px;
      will-change: opacity;
      transition: 1s ease all;
 }
@@ -1238,9 +1236,6 @@
     }
 }
  @media (max-width: 600px) {
-     .view-homepage .section-how-it-works .versions-wrapper {
-         height: 390px;
-    }
      .view-homepage .section-how-it-works .versions.desktop {
          display: none;
     }
@@ -1325,6 +1320,7 @@
 }
  .view-homepage .section-faq {
      margin-top: 100px;
+
      margin-bottom: 40px;
 }
  .view-homepage .section-faq h2 {

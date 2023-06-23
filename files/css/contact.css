@@ -64,6 +64,14 @@
      -webkit-background-clip: text;
      background-clip: text 
 }
+ .purple3 {
+     font-size: 150%;
+     background: linear-gradient(to top, #331277aa 0%, #12001244 50%, #11171d 100%) !important;
+     filter: drop-shadow(0 0 10px #000) 
+}
+ .purple3 a {
+     color: hotpink;
+}
  .dropbtn {
      background: 0 0;
      padding: 16px;
@@ -427,14 +435,27 @@
      color: #fff;
      text-align: center;
      padding: 43px 50px;
-     overflow: hidden 
+     overflow: hidden;
+}
+.tile2 {
+     border-radius: 20px;
+     color: #fff;
+     text-align: center;
+     width: 300%;
+     position: relative;
+     right: 320px;
+     padding: 30px 150px 30px 150px;
+     overflow: hidden;
+     background: linear-gradient(110deg, #4a12a500 0, #FF00EC20 110%);
+     border: solid 3px #3F1545;
+     box-shadow: 0px 0px 15px black;
 }
  .tile.purple {
      background: linear-gradient(to top, #5012b5 0, #11171d 380px) 
 }
  .tile.fade {
      background: linear-gradient(110deg, #4a12a59f 0, #FF00EC20 110%);
-     border: solid 2px #4a12a59f ;
+     border: solid 2px #4a12a59f;
 }
  .faq {
      text-align: left !important;
@@ -501,6 +522,12 @@
          font-size: 16px;
          line-height: 24px 
     }
+    .tile2 {
+     width: 120%;
+     position: relative;
+     right: 33px;
+     padding: 10px !important;
+}
 }
  .view-wrapper {
      display: block;
@@ -787,14 +814,11 @@
      width: 100%;
      height: 100%;
      opacity: .5;
-     filter: blur(2px) 
 }
  .view-homepage .section-top video {
      z-index: -1;
      -o-object-fit: cover;
      object-fit: cover;
-     font-family: "object-fit: cover;
-    ";
      width: 100%;
      height: 100%;
      pointer-events: none;
@@ -1109,7 +1133,7 @@
      justify-content: space-between 
 }
  .view-homepage .section-how-it-works .versions-wrapper {
-     height: 560px;
+     min-height: 480px;
      text-transform: none;
      overflow: hidden;
      position: relative;
@@ -1118,7 +1142,7 @@
 }
  @media (max-width:900px) {
      .view-homepage .section-how-it-works .versions-wrapper {
-         height: 500px 
+         min-height: 450px 
     }
 }
  .view-homepage .section-how-it-works .versions {
@@ -1136,8 +1160,8 @@
      display: none 
 }
  .view-homepage .section-how-it-works .versions-button {
-     margin-top: 20px;
-     margin-bottom: -23px;
+    position: relative;
+    top: 15px;
      will-change: opacity;
      transition: 1s ease all;
 }
@@ -1249,9 +1273,6 @@
     }
 }
  @media (max-width:600px) {
-     .view-homepage .section-how-it-works .versions-wrapper {
-         height: 390px 
-    }
      .view-homepage .section-how-it-works .versions.desktop {
          display: none 
     }
@@ -1363,7 +1384,6 @@
      flex: 1 1 50%;
      display: -webkit-box;
      display: -ms-flexbox;
-     display: flex;
      -webkit-box-orient: vertical;
      -webkit-box-direction: normal;
      -ms-flex-direction: column;
@@ -2128,3 +2148,85 @@
          margin: 0 auto 
     }
 }
+
+
+
+
+
+
+
+@media only screen and (max-width:767px) {
+
+        .card__read-more--open {
+          margin-bottom: -160px !important;
+          position: relative;
+          left: -90px;
+          margin-top: 20px;
+        }
+
+        .card-contents span {
+          width: 500;
+          position: relative;
+          right:105;
+          top: -80;
+        }
+
+        .list-item {
+          font-size: 17px !important;
+        }
+
+        .card__read-more {
+          position: relative;
+          left: -90px;
+          margin-top: 20px;
+          transform: scale(0.6);
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:767px) {
+
+        .bubbly-button {
+            width: 70% !important;
+        }
+    }
+.bubbly-button {
+        width: 20%;
+        white-space: nowrap;
+        font-family: "Helvetica", "Arial", sans-serif;
+        display: inline-block;
+        padding: 1em 2em;
+        text-align: center;
+        text-decoration: none !important;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #131313;
+        color: #fff !important;
+        border-radius: 15px;
+        border: solid 2px hotpink;
+        cursor: pointer;
+        position: relative;
+        transform: scale(1.1);
+        margin: ;
+        transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+        box-shadow: 0 2px 25px rgba(255, 0, 125, 0.5);
+      }
+
+      .bubbly-button:focus {
+        outline: 0;
+      }
+
+      .bubbly-button:active {
+        transform: scale(1);
+        box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+      }
