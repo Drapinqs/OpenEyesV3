@@ -7,6 +7,7 @@
  ::-webkit-scrollbar {
      width: 15px;
 }
+
  ::-webkit-scrollbar-thumb {
      background: #ff69b4;
      border-radius: 10px;
@@ -1487,6 +1488,7 @@
      border-radius: 25px;
      box-shadow: 0 0 10px #000;
      padding: 5;
+     overflow: hidden !important;
 }
  @-webkit-keyframes horizon-bounce {
      0%, 20%, 53%, 80%, to {
@@ -2150,11 +2152,36 @@
     }
 }
 
+#custom-button {
+  padding: 10px;
+  font-size: 100%;
+  color: white;
+  background-color: #FF69B4;
+  border: 1px solid hotpink;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 40%;
+  height: 3.5%;
+}
 
+#custom-button:hover {
+  background-color: #F251D2;
+  font-size: 110%;
+  border: 1px solid #FF69B4;
+}
 
-
-
-
+#textfield {
+	margin-bottom: 10px;
+	background: #352133;
+	border: #FF69B4 2px solid;
+	font-size: 120%;
+     width: 50%;
+     padding: 0 10px;
+     color:white;
+     line-height: 40px;
+     border-radius: 8px;
+}
 
 @media only screen and (max-width:767px) {
 
@@ -2167,7 +2194,6 @@
 
         .card-contents span {
           width: 500;
-          position: relative;
           right:105;
           top: -80;
         }

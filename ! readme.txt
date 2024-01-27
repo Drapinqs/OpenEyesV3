@@ -1,4 +1,4 @@
-\\ Website Design created by Jagger Horne for 2023 FBLA Nationals\\
+\\ Website Design created by Jagger Horne for 2024 FBLA Regionals\\
 
 Copyright Permissions are in the folder; "files\Copyright Proof"
 
